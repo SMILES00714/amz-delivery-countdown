@@ -1,0 +1,81 @@
+.week-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20vw;
+  height: 40vh;
+  border-radius: 10px;
+  margin-top: 10vh;
+  padding: 20px;
+  color: #808080;
+  border: 1px solid #303946;
+  background: rgba(37, 47, 61, 0.3);
+  backdrop-filter: blur(6px);
+}
+.week-card button {
+  position: absolute;
+  top: 3vh;
+  right: 2vw;
+}
+.active-week {
+  width: 25vw;
+  height: 50vh;
+  background-color: #fbab4b;
+  border: 2px solid black;
+  margin-top: 0;
+  color: black;
+  border: 2px solid #fbb662;
+  box-shadow: 0px 8px 120px -12px rgba(242, 170, 83, 0.3);
+}
+.active-week button {
+  position: absolute;
+  top: 3vh;
+  right: 2vw;
+  border-radius: 100px;
+  border: 1px solid #fbb662;
+  background: #fbab4b;
+}
+
+.day-card {
+  width: 98%;
+  background: rgba(37, 47, 61, 0.3);
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0 20px;
+  transition: width 0.5s ease;
+  border: 1px solid #303946;
+  height: 72px;
+}
+.day-card-0 {
+  border-radius: 20px;
+}
+.day-card-1 {
+  border-radius: 10px 10px 0 0;
+}
+
+.day-card-2 {
+  border: 1px solid #303946;
+}
+
+.active-day {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  transition: width 0.5s ease;
+  padding: 0 calc(1% + 20px);
+  border-radius: 20px;
+  border: 1.5px solid #fbb662;
+  background: rgba(241, 157, 56, 0.2);
+  box-shadow: 0px 8px 120px -12px rgba(242, 170, 83, 0.3);
+}
+.day-list {
+  overflow-y: auto;
+  height: 50vh;
+  overflow: hidden;
+}
+.week-list {
+  overflow-x: auto;
+  width: 90vw;
+  overflow: hidden;
+  margin-top: 30px;
+}

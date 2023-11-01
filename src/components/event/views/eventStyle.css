@@ -1,0 +1,127 @@
+.add-event-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+
+.event-body {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.event-body .event-schedule {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-left: 1px solid #252f3d;
+  padding-left: 3vw;
+}
+
+.event-body .event-schedule .detail {
+  width: 18vw;
+  height: 15vh;
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid #303946;
+  background: rgba(37, 47, 61, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.event-body .event-schedule .active {
+  border: 1.5px solid #fbb662;
+  background: rgba(241, 157, 56, 0.2);
+  box-shadow: 0px 8px 120px -12px rgba(242, 170, 83, 0.3);
+}
+
+.event-body .event-schedule1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.event-body .event-schedule1 .detail {
+  width: 20vw;
+  height: 15vh;
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid #303946;
+  background: rgba(37, 47, 61, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.event-body .event-schedule1 .active {
+  border: 1.5px solid #fbb662;
+  background: rgba(241, 157, 56, 0.2);
+  box-shadow: 0px 8px 120px -12px rgba(242, 170, 83, 0.3);
+}
+
+.event-body .event-timeline {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 20vw;
+  height: 63vh;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid #303946;
+  background: rgba(37, 47, 61, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.event-body .event-timeline .detail {
+  height: 6vh;
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #303946;
+  background: rgba(37, 47, 61, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.event-body .event-timeline .active {
+  border: 1.5px solid #fbb662;
+  background: rgba(241, 157, 56, 0.2);
+  box-shadow: 0px 8px 120px -12px rgba(242, 170, 83, 0.3);
+}
+
+.event-body .event-list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3vw;
+  align-items: center;
+}
+
+.event-body .event-list .detail {
+  width: 12vw;
+  height: 25vh;
+  border-radius: 20px;
+  border: 1px solid #303946;
+  background: rgba(48, 57, 70, 0.4);
+  backdrop-filter: blur(6px);
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event-name-input {
+  width: 30%;
+  border-radius: 12px;
+  border: 1px solid #303946;
+  background: rgba(37, 47, 61, 0.3);
+  backdrop-filter: blur(6px);
+}
+.event-name-input::placeholder {
+  color: #bbc0c6;
+}

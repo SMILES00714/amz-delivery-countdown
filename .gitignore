@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/out/
+/dist
+
+# production
+/build
+
+# misc
+.DS_Store
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# tizen-studio config
+/public/.settings/
+/public/.project
+/public/.tproject
+/public/config.xml

@@ -1,0 +1,20 @@
+.building-container {
+  margin-top: 5vh;
+}
+
+.card-img {
+  width: 35%;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.building-number {
+  width: 45%;
+  border-radius: 12px;
+  border: 1px solid #303946;
+  background: rgba(37, 47, 61, 0.3);
+  backdrop-filter: blur(6px);
+}
+.building-number::placeholder {
+  color: #bbc0c6;
+}

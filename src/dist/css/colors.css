@@ -1,0 +1,65 @@
+:root {
+  --color1: #000000;
+  --color2: #ffffff;
+  --color3: #f19d38;
+  --color4: #141920;
+  --color5: #252f3d;
+  --color6: #007185;
+  --color7: #b12704;
+}
+
+.background-color-1 {
+  background-color: var(--color1);
+}
+
+.background-color-2 {
+  background-color: var(--color2);
+}
+
+.background-color-3 {
+  background-color: var(--color3);
+}
+
+.background-color-4 {
+  background-color: var(--color4);
+}
+
+.background-color-5 {
+  background-color: var(--color5);
+}
+
+.background-color-6 {
+  background-color: var(--color6);
+}
+
+.background-color-7 {
+  background-color: var(--color7);
+}
+
+.text-color-1 {
+  color: var(--color1);
+}
+
+.text-color-2 {
+  color: var(--color2);
+}
+
+.text-color-3 {
+  color: var(--color3);
+}
+
+.text-color-4 {
+  color: var(--color4);
+}
+
+.text-color-5 {
+  color: var(--color5);
+}
+
+.text-color-6 {
+  color: var(--color6);
+}
+
+.text-color-7 {
+  color: var(--color7);
+}

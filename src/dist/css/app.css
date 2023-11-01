@@ -1,0 +1,33 @@
+body {
+  background: var(--color1);
+  font-family: "PT Sans", sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  top: 0px;
+  width: 100vw;
+  color: "white";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body > div {
+  display: flex;
+  height: inherit;
+  width: inherit;
+}
+
+.client-logo {
+  background-image: url("/src/dist/img/icons/amazon-logo.png");
+  background-repeat: no-repeat;
+  height: 80%;
+  width: 200px;
+}
+.navbar-logo {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.common-button {
+  border: 1px solid #252f3d;
+  background: #1b222c;
+}

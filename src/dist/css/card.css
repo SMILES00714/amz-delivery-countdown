@@ -1,0 +1,9 @@
+.amz-card {
+  background-color: var(--color2);
+  border-radius: 0.5rem;
+  padding: 1.4rem;
+}
+
+.amz-card.active {
+  background-color: var(--color4);
+}
