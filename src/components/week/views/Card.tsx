@@ -14,10 +14,13 @@ const Card: React.FC<CardProps> = ({ name, text, value, active, cardIndex }) => 
             setActiveCard(false);
         }
     }, [active])
+    const redirect = () => {
+        window.location.href = `http://localhost:3000/week/day`;
+    }
     return (
         <>
             {activeCard ? (
-                <div className='week-card active-week'>
+                <div className='week-card active-week' onClick={redirect}>
                     <Paragraph className='text-subtitle text-white'>{name}</Paragraph>
                     <Button shape='circle'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28" fill="none">

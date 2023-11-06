@@ -14,6 +14,11 @@ const DayCard: React.FC<DayCardProps> = ({ eventName, queue, inTime, outTime, la
             setActiveCard(false);
         }
     }, [active])
+    const redirect = (redirect: Boolean) => {
+        if (redirect) {
+            window.location.href = `http://localhost:3000/week/day/event/details/`;
+        }
+    }
     return (
         <>
             {cardIndex === 0 ? (
@@ -27,7 +32,7 @@ const DayCard: React.FC<DayCardProps> = ({ eventName, queue, inTime, outTime, la
                     </Row>
                 </div>
             ) : cardIndex === 1 ? (
-                <div className={`day-card day-card-1 margin-top-two ${activeCard ? "active-day" : null}`}>
+                <div className={`day-card day-card-1 margin-top-two ${activeCard ? "active-day" : null}`} onClick={() => redirect(activeCard)}>
                     <Row>
                         <Col span={5}><div><Paragraph className="text-content text-white margin-top-two">{eventName}</Paragraph></div></Col>
                         <Col span={5}><div><Paragraph className="text-content text-white margin-top-two">{queue}</Paragraph></div></Col>
@@ -37,7 +42,7 @@ const DayCard: React.FC<DayCardProps> = ({ eventName, queue, inTime, outTime, la
                     </Row>
                 </div>
             ) : (
-                <div className={`day-card day-card-2 ${activeCard ? "active-day" : null}`}>
+                <div className={`day-card day-card-2 ${activeCard ? "active-day" : null}`} onClick={() => redirect(activeCard)}>
                     <Row>
                         <Col span={5}><div><Paragraph className="text-content text-white margin-top-two">{eventName}</Paragraph></div></Col>
                         <Col span={5}><div><Paragraph className="text-content text-white margin-top-two">{queue}</Paragraph></div></Col>

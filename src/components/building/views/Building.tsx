@@ -1,4 +1,4 @@
-// import React from "react";
+import { useState } from "react";
 
 /** Redux */
 import { searchHubsAction } from "../../../redux/actions/hub";
@@ -27,13 +27,27 @@ export default function BuildingView() {
   console.log(actions);
 
   const { Paragraph } = Typography;
+  const [number, setNumber] = useState("");
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setNumber(event?.target?.value as string)
+  };
+  const onKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      if (number !== "") {
+        window.localStorage.setItem("number", number);
+        window.location.href = "/week";
+      } else {
+        return;
+      }
+    }
+  };
 
   return (
     <div className="building-container flex flex-column align-center">
       <img alt="img" className="card-img" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
       <Paragraph className="text-white text-title">Enter Building Number</Paragraph>
       <Paragraph className="text-white text-content margin-top-mfive">Input the correct building number to continue</Paragraph>
-      <Input className="building-number" size="large" placeholder="Building Number" />
+      <Input className="building-number" size="large" placeholder="Building Number" onChange={onChange} onKeyUp={onKeyPress} />
     </div>
   );
 }

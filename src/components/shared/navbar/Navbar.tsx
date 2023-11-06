@@ -1,12 +1,19 @@
-// import React from "react";
+import { useState } from "react";
 
 /** Vendors */
-import { Button, Layout, Typography } from "antd";
+import { Button, Layout, Typography, Modal } from "antd";
 /** Custom Assets */
 import Logo from "../../../dist/img/icons/bu-logo-512.png";
 
 export default function Navbar() {
   const { Paragraph } = Typography;
+  const [open, setOpen] = useState(false);
+  const handleOk = () => {
+    setOpen(false);
+  };
+  const showModal = () => {
+    setOpen(true);
+  };
   return (
     <Layout.Header className="justify-between flex align-center navbar-divider">
       <div className="flex align-center">
@@ -17,7 +24,7 @@ export default function Navbar() {
         </svg>
       </div>
       <div className="flex align-center">
-        <Button type="text" shape="round">
+        <Button type="text" shape="round"  onClick={showModal}>
           <Paragraph className="text-content text-white margin-top-zero flex align-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M21 10.063V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3H19C17.021 4.979 13.303 6.087 11 6.613V17.387C13.303 17.913 17.021 19.021 19 21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V13.937C21.4298 13.8265 21.8106 13.5762 22.0825 13.2255C22.3544 12.8749 22.502 12.4437 22.502 12C22.502 11.5563 22.3544 11.1251 22.0825 10.7745C21.8106 10.4238 21.4298 10.1735 21 10.063ZM5 7C4.46957 7 3.96086 7.21071 3.58579 7.58579C3.21071 7.96086 3 8.46957 3 9V15C3 15.5304 3.21071 16.0391 3.58579 16.4142C3.96086 16.7893 4.46957 17 5 17H6L7 22H9V7H5Z" fill="white" />
@@ -33,6 +40,22 @@ export default function Navbar() {
           <img alt="Blue Umbrella LLC" src={Logo} />
         </div>
       </div>
+      <Modal
+        open={open}
+        title="Title"
+        onOk={handleOk}
+        footer={(_, { OkBtn }) => (
+          <>
+            <OkBtn />
+          </>
+        )}
+      >
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Modal>
     </Layout.Header>
   );
 }
