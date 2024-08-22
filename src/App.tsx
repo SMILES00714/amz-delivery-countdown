@@ -1,4 +1,5 @@
-import { Suspense, lazy, useEffect } from "react";
+// import { Suspense, lazy, useEffect } from "react";
+import { lazy, useEffect } from "react";
 
 /** Vendors */
 import { Provider as ReduxProvider } from "react-redux";
@@ -55,65 +56,65 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Suspense>
+      // <Suspense>
         <Building />
-      </Suspense>
+      // </Suspense>
     ),
   },
   {
     path: "/week",
     element: (
-      <Suspense>
+      // <Suspense>
         <Week />
-      </Suspense>
+      // </Suspense>
     ),
   },
   {
     path: "/week/day",
     element: (
-      <Suspense>
+      // <Suspense>
         <Day />
-      </Suspense>
+      // </Suspense>
     ),
   },
   {
     path: "/week/day/event/list",
     element: (
-      <Suspense>
+      // <Suspense>
         <EventList />
-      </Suspense>
+      // </Suspense>
     ),
   },
   {
     path: "/week/day/event/details",
     element: (
-      <Suspense>
+      // <Suspense>
         <EventDetails />
-      </Suspense>
+      // </Suspense>
     ),
   },
   {
     path: "/week/day/event/details/add",
     element: (
-      <Suspense>
+      // <Suspense>
         <CreateEvent />
-      </Suspense>
+      // </Suspense>
     ),
   },
   {
     path: "/coutdown/list",
     element: (
-      <Suspense>
+      // <Suspense>
         <CountList />
-      </Suspense>
+      // </Suspense>
     ),
   },
   {
     path: "/coutdown/details",
     element: (
-      <Suspense>
+      // <Suspense>
         <CountDetails />
-      </Suspense>
+      // </Suspense>
     ),
   },
 ]);
