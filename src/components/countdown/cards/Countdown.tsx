@@ -31,7 +31,7 @@ const Countdown: React.FC<eventType> = ({
   }, [activeIndex])
   const redirect = (redirect: Boolean) => {
     if (redirect) {
-      window.location.href = `http://localhost:3000/coutdown/details`;
+      window.location.href = `/coutdown/details`;
     }
   }
 

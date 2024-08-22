@@ -16,7 +16,7 @@ const DayCard: React.FC<DayCardProps> = ({ eventName, queue, inTime, outTime, la
     }, [active])
     const redirect = (redirect: Boolean) => {
         if (redirect) {
-            window.location.href = `http://localhost:3000/week/day/event/details/`;
+            window.location.href = `/week/day/event/details/`;
         }
     }
     return (

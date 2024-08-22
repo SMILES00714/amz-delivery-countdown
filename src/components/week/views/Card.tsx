@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({ name, text, value, active, cardIndex }) => 
         }
     }, [active])
     const redirect = () => {
-        window.location.href = `http://localhost:3000/week/day`;
+        window.location.href = `/week/day`;
     }
     return (
         <>

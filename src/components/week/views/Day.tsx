@@ -95,7 +95,7 @@ export default function WeekDayView() {
   return (
     <div>
       <div className='flex align-center margin-top-two'>
-        <Button className='common-button' href='http://localhost:3000/week' type="default" size='large' shape="round">
+        <Button className='common-button' href='/week' type="default" size='large' shape="round">
           <Paragraph className='text-content text-white'>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18" fill="none">
               <path d="M7.8284 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.8284 12.9999H20V10.9999H7.8284Z" fill="white" />
@@ -106,7 +106,7 @@ export default function WeekDayView() {
       </div>
       <div className='flex align-center justify-between'>
         <Paragraph className='text-white text-subtitle'>{"Monday Schedule"}</Paragraph>
-        <Button type="default" href='http://localhost:3000/week/day/event/details/add' className='no-border background-yellow' size='large' shape="round">
+        <Button type="default" href='/week/day/event/details/add' className='no-border background-yellow' size='large' shape="round">
           <Paragraph className='text-content text-white margin-top-zero'>{"Add Delivery Event"}</Paragraph>
         </Button>
       </div>
