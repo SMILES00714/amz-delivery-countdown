@@ -11,7 +11,7 @@
 ## Developing the app
 
 1. Ensure you are on the right branch for the bug/feature/hot fix
-2. In VSCode run `npm install` and then `npm start` and navigate to http://localhost:3000 to get started
+2. In VSCode run `npm install` and then `npm start` and navigate to [http://localhost:3000](https://drive.google.com/drive/folders/17QfFLLWQFphzbyPn6jbeYnNmjZprADCD) to get started
 3. Develop feature or w.e.
 4. Test using above steps in Tizen Studio TV Emulator
 5. Create PR and send for @adam-kramer to review in GitHub
